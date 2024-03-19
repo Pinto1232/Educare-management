@@ -1,4 +1,4 @@
-export interface TestProps {
+export interface HomeProps {
     title: string;
     onPress: () => void;
 }
