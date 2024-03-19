@@ -13,5 +13,8 @@
     "noEmit": true,
     "jsx": "react-native"
   },
-  "include": ["src/**/*"]
+  "include": [
+    "src/**/*"
+  ],
+  "extends": "expo/tsconfig.base"
 }
