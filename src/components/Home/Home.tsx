@@ -1,10 +1,17 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { View } from 'react-native';
 
-const Home: React.FC = () => {
+
+interface HomeProps {
+    userId: string;
+
+  }
+  
+  const Home: React.FC<HomeProps> = (userId) => {
+    console.log(userId);
     return (
         <View>
-           <Text>Home</Text>
+       
         </View>
     );
 };

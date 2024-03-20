@@ -1,14 +1,22 @@
 import React, { useEffect, useRef } from "react";
 import { Text, View, Animated } from "react-native";
 import styles from "./Splash.styles";
-import { useNavigation } from '@react-navigation/native';  
+import { useNavigation } from "@react-navigation/native";
+import { StackNavigationProp } from '@react-navigation/stack';
+
+
+type RootStackParamList = {
+  Home: { userId: string }; 
+};
+
+type NavigationProp = StackNavigationProp<RootStackParamList, 'Home'>;
 
 const Splash: React.FC = () => {
   const scale = useRef(new Animated.Value(1)).current;
-  const navigation = useNavigation();
+  const navigation = useNavigation<NavigationProp>(); 
+
 
   useEffect(() => {
-    
     Animated.loop(
       Animated.sequence([
         Animated.timing(scale, {
@@ -24,13 +32,11 @@ const Splash: React.FC = () => {
       ])
     ).start();
 
-    
     const timer = setTimeout(() => {
-      navigation.navigate('Home', { userId: "someUserId" });
+      navigation.navigate("Home", { userId: "Home" });
       console.log("Navigate to the Home screen");
     }, 3000);
 
-    
     return () => clearTimeout(timer);
   }, [scale, navigation]);
 
