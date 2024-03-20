@@ -2,19 +2,17 @@ import React, { useEffect, useRef } from "react";
 import { Text, View, Animated } from "react-native";
 import styles from "./Splash.styles";
 import { useNavigation } from "@react-navigation/native";
-import { StackNavigationProp } from '@react-navigation/stack';
-
+import { StackNavigationProp } from "@react-navigation/stack";
 
 type RootStackParamList = {
-  Home: { userId: string }; 
+  Home: { userId: string };
 };
 
-type NavigationProp = StackNavigationProp<RootStackParamList, 'Home'>;
+type NavigationProp = StackNavigationProp<RootStackParamList, "Home">;
 
 const Splash: React.FC = () => {
   const scale = useRef(new Animated.Value(1)).current;
-  const navigation = useNavigation<NavigationProp>(); 
-
+  const navigation = useNavigation<NavigationProp>();
 
   useEffect(() => {
     Animated.loop(
@@ -43,7 +41,7 @@ const Splash: React.FC = () => {
   return (
     <View style={styles.container}>
       <Animated.Image
-        source={require("../../../assets/splash_logo.png")}
+        source={require("../../../assets/splash_logo.jpg")}
         style={[styles.logo, { transform: [{ scale }] }]}
       />
       <Text style={styles.text}>Welcome to Educare Management</Text>

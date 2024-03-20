@@ -6,18 +6,15 @@ export default StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
-  blueOverlay: {
+  navbarContainer: {
+    flexDirection: "row",
+    justifyContent: "space-around",
+    alignItems: "center",
+    height: 60,
+    backgroundColor: "#fff",
     position: "absolute",
-    top: 0,
+    bottom: 0,
     left: 0,
     right: 0,
-    bottom: 0,
-    backgroundColor: "rgba(0, 0, 255, 0.5)",
-  },
-  textHeader: {
-    color: "#fff",
-    fontSize: 25,
-    textAlign: "center",
-    width: 300,
   },
 });
