@@ -1,4 +1,5 @@
 export interface HomeProps {
-    title: string;
-    onPress: () => void;
+  title?: string;
+  onPress?: () => void;
+  userId: string;
 }

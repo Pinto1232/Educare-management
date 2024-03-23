@@ -1,13 +1,12 @@
 import React from "react";
 import { View, ImageBackground, Text } from "react-native";
 import styles from "./Home.styles";
+import { HomeProps } from "./Home.types";
 import { Navbar } from "../Navbar";
 
-interface HomeProps {
-  userId: string;
-}
+const Home: React.FC<HomeProps> = (props) => {
+  const { userId, title, onPress } = props;
 
-const Home: React.FC<HomeProps> = (userId) => {
   const handleIconPress = (iconName: string) => {
     console.log(`${iconName} icon pressed`);
   };
@@ -21,11 +20,11 @@ const Home: React.FC<HomeProps> = (userId) => {
     >
       <View style={styles.blueOverlay} />
       <View style={styles.container}>
-        <Text style={styles.textHeader}>Elevate Education, Simplify School Management!</Text>
+        <Text style={styles.textHeader}>{title}</Text>
       </View>
       <Navbar
         onIconPress={handleIconPress}
-        title="Your Title Here"
+        title=""
         onPress={() => console.log("Navbar pressed")}
       />
     </ImageBackground>

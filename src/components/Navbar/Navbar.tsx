@@ -13,8 +13,8 @@ const Navbar: React.FC<NavbarProps> = ({ onIconPress }) => {
       <TouchableOpacity onPress={() => onIconPress("search")}>
         <Icon name="search" size={30} color="#000" />
       </TouchableOpacity>
-      <TouchableOpacity onPress={() => onIconPress("user")}>
-        <Icon name="user" size={30} color="#000" />
+      <TouchableOpacity onPress={() => onIconPress("LoginForm")}>
+        <Icon style={styles.UserIcon} name="user" size={30} color="#000" />
       </TouchableOpacity>
     </View>
   );

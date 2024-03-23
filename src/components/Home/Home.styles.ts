@@ -16,8 +16,9 @@ export default StyleSheet.create({
   },
   textHeader: {
     color: "#fff",
-    fontSize: 25,
+    fontSize: 27,
+    fontWeight: '800',
     textAlign: "center",
-    width: 300,
+    width: 400,
   },
 });
