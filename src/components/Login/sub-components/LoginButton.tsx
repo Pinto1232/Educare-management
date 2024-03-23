@@ -1,27 +1,12 @@
-import React from 'react';
-import { TouchableOpacity, Text, StyleSheet } from 'react-native';
-
-interface LoginButtonProps {
-  onPress: () => void; 
-  title: string; 
-}
+import React from "react";
+import { TouchableOpacity, Text } from "react-native";
+import { LoginButtonProps } from "../Login.types";
+import buttonStyle from "../Login.styles";
 
 const LoginButton = ({ onPress, title }: LoginButtonProps) => (
-  <TouchableOpacity onPress={onPress} style={styles.button}>
-    <Text style={styles.text}>{title}</Text>
+  <TouchableOpacity onPress={onPress} style={buttonStyle.button}>
+    <Text style={buttonStyle.text}>{title}</Text>
   </TouchableOpacity>
 );
-
-const styles = StyleSheet.create({
-  button: {
-    backgroundColor: 'blue',
-    padding: 15,
-    borderRadius: 5,
-  },
-  text: {
-    color: 'white',
-    textAlign: 'center',
-  },
-});
 
 export default LoginButton;

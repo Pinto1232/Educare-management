@@ -9,7 +9,7 @@ export default StyleSheet.create({
   },
   input: {
     borderWidth: 1,
-    borderColor: "#007BFF",
+    borderColor: "#07BFF",
     borderRadius: 10,
     width: "80%",
     padding: 15,
@@ -24,16 +24,6 @@ export default StyleSheet.create({
     shadowRadius: 3.84,
     elevation: 5,
   },
-  promptText: {
-    marginTop: 20,
-    color: 'grey', 
-  },
-  registerText: {
-    marginTop: 5,
-    color: 'blue',
-    textDecorationLine: 'underline',
-  },
-
   button: {
     backgroundColor: "blue",
     padding: 15,
@@ -50,11 +40,20 @@ export default StyleSheet.create({
     shadowRadius: 2.62,
     elevation: 4,
   },
-
   text: {
     color: "white",
+    fontSize: 16,
     textAlign: "center",
-    fontSize: 18,
-    fontWeight: "bold",
   },
+  registerText: {
+    marginTop: 5,
+    color: "blue",
+    textDecorationLine: "underline",
+    textAlign: 'center'
+  },
+  promptText: {
+    marginTop: 20,
+    color: 'grey', 
+    
+  }
 });

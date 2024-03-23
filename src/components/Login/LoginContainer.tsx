@@ -1,8 +1,15 @@
-import React from 'react';
-import LoginForm from './LoginForm';
+import React from "react";
+import LoginForm from "./LoginForm";
 
 const LoginContainer: React.FC = () => {
-    return <LoginForm />;
+  return (
+    <LoginForm
+      onSubmit={(username, password) => {
+        console.log(username, password);
+      }}
+      RegistrationForm={undefined}
+    />
+  );
 };
 
 export default LoginContainer;

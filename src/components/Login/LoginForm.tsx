@@ -1,48 +1,61 @@
-import React, { useState } from 'react';
-import { View, TextInput, StyleSheet } from 'react-native';
-import LoginButton from './sub-components/LoginButton'; 
+import React, { useState } from "react";
+import { View, TextInput, Text, TouchableOpacity } from "react-native";
+import { StackNavigationProp } from "@react-navigation/stack";
+import LoginButton from "./sub-components/LoginButton";
+import loginStyles from "./Login.styles";
+import { useNavigation } from "@react-navigation/native";
+import { LoginFormProps } from "./Login.types";
 
-const LoginForm = () => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
+
+// Define a new type for the internal form state
+type LoginFormState = {
+  username: string;
+  password: string;
+};
+
+export type ParamList = {
+  RegistrationForm: undefined;
+};
+
+const LoginForm: React.FC<LoginFormProps> = ({ onSubmit }) => {
+  const [formState, setFormState] = useState<LoginFormState>({
+    username: "",
+    password: "",
+  });
+
+  const navigation = useNavigation<StackNavigationProp<ParamList>>();
 
   const handleSubmit = () => {
-    console.log(username, password);
+    console.log(formState.username, formState.password);
+    onSubmit(formState.username, formState.password);
+  };
+
+  const handleChange = (value: string, field: keyof LoginFormState) => {
+    setFormState({ ...formState, [field]: value });
   };
 
   return (
-    <View style={styles.container}>
+    <View style={loginStyles.container}>
       <TextInput
-        style={styles.input}
-        value={username}
-        onChangeText={setUsername}
+        style={loginStyles.input}
+        value={formState.username}
+        onChangeText={(value) => handleChange(value, "username")}
         placeholder="Username"
       />
       <TextInput
-        style={styles.input}
-        value={password}
-        onChangeText={setPassword}
+        style={loginStyles.input}
+        value={formState.password}
+        onChangeText={(value) => handleChange(value, "password")}
         placeholder="Password"
         secureTextEntry
       />
       <LoginButton title="Login" onPress={handleSubmit} />
+      <Text style={loginStyles.promptText}>Not registered yet?</Text>
+      <TouchableOpacity onPress={() => navigation.navigate("RegistrationForm")}>
+        <Text style={loginStyles.registerText}>Register</Text>
+      </TouchableOpacity>
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  input: {
-    borderWidth: 1,
-    borderColor: 'gray',
-    width: '80%',
-    padding: 10,
-    marginBottom: 20,
-  },
-});
 
 export default LoginForm;
