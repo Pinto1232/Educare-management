@@ -17,7 +17,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Educare-management")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+d16676cdc777ddb1b5c92b737a335ccac9858723")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+2fec92dc823a57149ab56e0bda7a08ce93f88494")]
 [assembly: System.Reflection.AssemblyProductAttribute("Educare-management")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Educare-management")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
