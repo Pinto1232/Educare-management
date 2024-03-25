@@ -1,5 +1,0 @@
-    <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-        package="EducareManagement">
-        <uses-permission android:name="android.permission.DETECT_SCREEN_CAPTURE"/>
-    </manifest>
-    

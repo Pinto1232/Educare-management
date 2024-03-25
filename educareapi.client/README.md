@@ -1,1 +1,0 @@
-# Educare-management
