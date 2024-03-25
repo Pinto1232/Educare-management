@@ -1,6 +1,0 @@
-@educareManagementApi_HostAddress = http://localhost:5101
-
-GET {{educareManagementApi_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
