@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Iq0QenjEkQGG0nYOatOmPdHkaTzI0N6yAwN7jrhWX3k=",
+  "Hash": "+SsTMv3Rs0ELaV9C5mXAK8xBHg9H3L8oymCfGTn5hSo=",
   "Source": "educare.Server",
   "BasePath": "_content/educare.Server",
   "Mode": "Default",
@@ -11,10 +11,10 @@
       "Version": 2,
       "Source": "educare.client",
       "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
       "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained",
       "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
       "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
     }
   ],
