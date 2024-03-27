@@ -30,9 +30,9 @@ C:\Users\pinto\Documents\Development\Educare-management\educare.Server\obj\Debug
 C:\Users\pinto\Documents\Development\Educare-management\educare.Server\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.educare.Server.props
 C:\Users\pinto\Documents\Development\Educare-management\educare.Server\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\pinto\Documents\Development\Educare-management\educare.Server\obj\Debug\net8.0\scopedcss\bundle\educare.Server.styles.css
-C:\Users\pinto\Documents\Development\Educare-management\educare.Server\obj\Debug\net8.0\educare.Server.csproj.CopyComplete
 C:\Users\pinto\Documents\Development\Educare-management\educare.Server\obj\Debug\net8.0\educare.Server.dll
 C:\Users\pinto\Documents\Development\Educare-management\educare.Server\obj\Debug\net8.0\refint\educare.Server.dll
 C:\Users\pinto\Documents\Development\Educare-management\educare.Server\obj\Debug\net8.0\educare.Server.pdb
 C:\Users\pinto\Documents\Development\Educare-management\educare.Server\obj\Debug\net8.0\educare.Server.genruntimeconfig.cache
 C:\Users\pinto\Documents\Development\Educare-management\educare.Server\obj\Debug\net8.0\ref\educare.Server.dll
+C:\Users\pinto\Documents\Development\Educare-management\educare.Server\obj\Debug\net8.0\educare..B15F1E43.Up2Date

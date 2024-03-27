@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("educare.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+18397fa859975c231f1840f7a40c8abe48e2de00")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+179ecfff4330561a20a837a7b0775f116a173d4f")]
 [assembly: System.Reflection.AssemblyProductAttribute("educare.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("educare.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
